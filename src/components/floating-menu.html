@@ -1,0 +1,66 @@
+<div class="floating-menu">
+    <button class="menu-button" onclick="toggleMenu()">
+        <img src="assets/icons/menu.svg" alt="Menu">
+    </button>
+    <div class="menu-content">
+        <a href="#tasks" class="menu-item">
+            <img src="assets/icons/add.svg" alt="Add Task"> Tâches
+        </a>
+        <a href="#weekly-planning" class="menu-item">
+            <img src="assets/icons/calendar.svg" alt="Weekly Planning"> Planning Hebdomadaire
+        </a>
+    </div>
+</div>
+
+<style>
+    .floating-menu {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-button {
+        background-color: #6c63ff;
+        border: none;
+        border-radius: 50%;
+        padding: 15px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-item img {
+        margin-right: 8px;
+    }
+
+    .menu-item:hover {
+        background-color: #f0f0f0;
+    }
+</style>
+
+<script>
+    function toggleMenu() {
+        const menuContent = document.querySelector('.menu-content');
+        menuContent.style.display = menuContent.style.display === 'flex' ? 'none' : 'flex';
+    }
+</script>

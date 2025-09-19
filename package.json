@@ -1,0 +1,27 @@
+{
+  "name": "animated-todo-app",
+  "version": "1.0.0",
+  "description": "A web application for managing tasks with animations and a floating menu.",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'Test step not defined'"
+  },
+  "keywords": [
+    "todo",
+    "task management",
+    "animations",
+    "floating menu"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3",
+    "@capacitor/core": "^7.4.3"
+  }
+}

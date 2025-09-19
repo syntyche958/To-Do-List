@@ -1,0 +1,74 @@
+body {
+    background-image: url('../images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.todo-container {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.todo-container:hover {
+    transform: scale(1.02);
+}
+
+.button {
+    background: linear-gradient(90deg, #6c63ff, #8ec5fc);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #8ec5fc, #6c63ff);
+    transform: translateY(-2px);
+}
+
+.floating-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.floating-menu:hover {
+    transform: scale(1.1);
+}
+
+.date-picker {
+    position: relative;
+}
+
+.date-picker input {
+    padding-left: 30px;
+}
+
+.date-picker .calendar-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
