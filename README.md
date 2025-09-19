@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Animated To-Do App
 
 ## Overview
@@ -61,3 +62,7 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
+=======
+# To-Do-List
+Organiser vos taches avec style et efficacité
+>>>>>>> 5104f0eee12e3b7d3a41f9f613672b07d0ccb62e
